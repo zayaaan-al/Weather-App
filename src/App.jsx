@@ -64,11 +64,11 @@ const App = () => {
     };
 
   return (
-    <div className='min-h-screen '>
+    <div className='min-h-screen'>
       <WeatherBackground condition={getWeatherCondition()} />
       <div className='flex items-center justify-center p-6 min-h-screen'>
         <div className='bg-transparent backdrop-filter backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-md text-white w-full border-white/30 relative z-10'>
-          <h1 className='text-4xl font-extrabold text-center mb-6'>
+          <h1 className='text-4xl text-white/100 font-extrabold text-center mb-6'>
             Weather App
           </h1>
 
@@ -81,7 +81,7 @@ const App = () => {
                 className='mb-4 p-3 rounded border border-white bg-transparent text-white placeholder-white focus:outline-none focus:border-blue-300 transition duration-300'
               />
               {suggestion.length > 0 && (
-                <div className='absolute top-12 left-0 right-0 bg-transparent shadow-md rounded z-10'>
+                <div className='absolute top-12 left-0 right-0 bg-transparent shadow-md rounded z-10 '>
                   {suggestion.map((s) => (
                     <button
                       type='button'
@@ -108,7 +108,7 @@ const App = () => {
               </button>
             </form>
           ) : (
-            <div className='mt-6 text-center transition-opacity duration-500'>
+            <div className='mt-6 text-center transition-opacity text-black duration-500'>
               <button
                 onClick={() => {
                   setWeather(null);
