@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 import Thunderstorm from '../assets/Thunderstorm.gif';
@@ -30,7 +31,7 @@ const getBackground = () => {
     const asset =gifs[weatherType];
 
     if (!asset) return gifs.default; 
-    if(typeof async === 'object')
+    if(typeof asset === 'object')
         return condition.isday? asset.day : asset.night;
 
     return asset;
@@ -56,4 +57,4 @@ return(
     </div>
 )
 }
-export default WeatherBackground
+export default WeatherBackground 

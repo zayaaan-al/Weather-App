@@ -1,4 +1,3 @@
-
 // this functn  converts wind  direction given in degrees
 export const getWindDirection = (deg) => {
 
